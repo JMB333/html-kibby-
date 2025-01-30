@@ -46,209 +46,279 @@ table {
 
 /*
   ========================================
-  Custom styles mobile~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TEXT AND BOX AND BORDER SHANDOWS
+  Custom styles~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TEXT AND BOX AND BORDER SHANDOWS
   ========================================
 */
-#soup-mobile{display: none;}
-* { outline: 1px red solid !important; visibility: visible !important }
-*{box-sizing: border-box;}
-svg{display: none;}
-/* html {overflow-x: hidden; } */
+@media screen and (max-width: 435px){
+  *{box-sizing: border-box;}  
+  /* * { outline: 1px red solid !important; visibility: visible !important } */
 
-a {
-  color: rgba(255, 255, 255, 0.687);
-  text-decoration: none;
-}
+  svg{display: none;}
 
-body {
-  font-family: "Fredericka the Great", serif;
-  letter-spacing: 0.1rem;
-  width: 90vw;
-  box-sizing: border-box;
-  background-image: url("/assets/images/usable-images/polish-eagle.jpeg");
-  background-size: 1rem;
-  background-color: #900000;
-  background-position: top;
-  color: rgba(255, 255, 255, 0.687);
-  
-  border-width: 0.4rem;
-  border-style: solid;
-  border-image-source: url(/assets/images/usable-images/wood1.jpg);
-  border-image-slice: 40% 10%;
-  border-image-repeat: stretch;
 
-  
-  display: grid;
-  justify-self: center;
-  margin: 3vw;
-}
-/*header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
 
-.header{
-  font-family: "Fredericka the Great", serif;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  justify-content: center;
-  padding-bottom: 0.1rem;
-}
-h1.header {
-  text-align: center;
-  
-  align-self: center;
-  font-size: 2rem;
-  border-bottom: 0.75rem ;
-  /*make small chalkboard background for welcome text*/
+  body {
+    font-family: "Fredericka the Great", serif;
+    letter-spacing: 0.1rem;
+    width: 90vw;
+    box-sizing: border-box;
+    background-image: url("/assets/images/usable-images/polish-eagle.jpeg");
+    background-size: 1rem;
+    background-color: #900000;
+    background-position: top;
+    color: rgba(255, 255, 255, 0.905);
+    
+    border-width: 0.4rem;
+    border-style: solid;
+    border-image-source: url(/assets/images/usable-images/wood1.jpg);
+    border-image-slice: 40% 10%;
+    border-image-repeat: stretch;
 
-}
-h1.mobile.header {
-  text-transform: uppercase;
-  letter-spacing: .3rem;
-}
+    
+    display: grid;
+    justify-self: center;
+    margin: 3vw;
+  }
+  /*header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-p.header{
-  padding: 0 1rem 1rem 1rem;
-  font-size: 0.75rem;
-  text-align: center;
-  align-self: center;
-  flex-wrap: wrap;
-}
-.header.shorty-header{
-  font-size: 4rem;
-}
-.header-bagels{
+  .header{
+    font-family: "Fredericka the Great", serif;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    padding-bottom: 0.1rem;
+  }
+  h1.header {
+    text-align: center;
+    padding-top: 3vw;
+    align-self: center;
+    font-size: 2rem;
+    border-bottom: 0.75rem ;
+    /*make small chalkboard background for welcome text*/
 
-width: 100%;
-}
+  }
+  h1.mobile.header {
+    text-transform: uppercase;
+  }
 
-/*nav~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.nav{}
-/* nav{background-color:burlywood;} */
-.nav{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-}
+  p.header{
+    padding: 0 1rem 1rem 1rem;
+    font-size: 0.75rem;
+    text-align: center;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+  .header.shorty-header{
+    font-size: 4rem;
+  }
+  .header-bagels{
 
- 
-nav>ul{
-  width : 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  
-  justify-content: space-around;
-}
-img.btn.nav{
-  width: 10vw;
-  padding: 0.2rem 0.5rem 0.2rem 0;
-
-}
-li.nav.btn {
   width: 100%;
-  letter-spacing: normal;
-  font-size: 1.2rem;
-  font-family: "Fredericka the Great", serif;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-
-  border-width: 0 0 0.3rem 0;
-  border-style: solid;
-  border-image-source: url(/assets/images/usable-images/wood2H.jpg);
-  border-image-slice: 0 0 50% 0;
-  border-image-repeat: stretch;
-
-}
-
-li.nav.menu {
-  border-width: 0.3rem  0 0.3rem 0;
-  border-style: solid;
-  border-image-source: url(/assets/images/usable-images/wood3H.jpg);
-  border-image-slice: 50% 0 50% 0;
-  border-image-repeat: stretch;
-}
-
-li.nav.soup {
-  border-width: 0 0 0.3rem 0;
-  border-style: solid;
-  border-image-source: url(/assets/images/usable-images/wood5H.jpg);
-  border-image-slice: 0 0 50% 0;
-  border-image-repeat: stretch;
-}
-
-li.nav.story {
-  border-width: 0 0 0.3rem 0;
-  border-style: solid;
-  border-image-source: url(/assets/images/usable-images/wood1H.jpg);
-  border-image-slice: 0 0 50% 0;
-  border-image-repeat: stretch;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
-
-footer{
-  display: flex;
-  flex-direction: column;
-  
-  
-}
-ul.footer{
-  font-size: .8rem;
-  list-style-type: none;
-}
-
-.times{
-  padding: 1rem;
-  float: left;
-  }
-  
-h2.footer{
-  align-self: center;
-  padding-top: 1rem;
-  font-size: 1.3rem;
   }
 
-  /* iframe{
-    width: autovw;
-  } */
-/*mains~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
- 
-section.main{
-  background: radial-gradient(circle, rgba(218,165,32,1) 20%, rgba(227,139,8,1) 100%);
-  display: flex;              
-  flex-direction: column;
-  border-width: 0 0 0.4rem 0;
-  border-style: solid;
-  border-image-source: url(/assets/images/usable-images/wood1H.jpg);
-  border-image-slice: 0 0 50% 0;
-  border-image-repeat: stretch;
+  /*nav~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  /* nav{background-color:burlywood;} */
+  .nav{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+
+  
+  nav>ul{
+    width : 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    
+    justify-content: space-around;
+  }
+  img.btn.nav{
+    width: 10vw;
+    padding: 0.2rem 0.5rem 0.2rem 0;
+
+  }
+  li.nav.btn {
+    width: 100%;
+    letter-spacing: normal;
+    font-size: 1.2rem;
+    font-family: "Fredericka the Great", serif;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    border-width: 0 0 0.3rem 0;
+    border-style: solid;
+    border-image-source: url(/assets/images/usable-images/wood2H.jpg);
+    border-image-slice: 0 0 50% 0;
+    border-image-repeat: stretch;
+
+  }
+
+  li.nav.menu {
+    border-width: 0.3rem  0 0.3rem 0;
+    border-style: solid;
+    border-image-source: url(/assets/images/usable-images/wood3H.jpg);
+    border-image-slice: 50% 0 50% 0;
+    border-image-repeat: stretch;
+  }
+
+  li.nav.soup {
+    border-width: 0 0 0.3rem 0;
+    border-style: solid;
+    border-image-source: url(/assets/images/usable-images/wood5H.jpg);
+    border-image-slice: 0 0 50% 0;
+    border-image-repeat: stretch;
+  }
+
+  li.nav.story {
+    border-width: 0 0 0.3rem 0;
+    border-style: solid;
+    border-image-source: url(/assets/images/usable-images/wood1H.jpg);
+    border-image-slice: 0 0 50% 0;
+    border-image-repeat: stretch;
+  }
+
+  /*footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  ul.footer{
+    font-size: .8rem;
+    list-style-type: none;
+  }
+
+  .times{
+    padding: 1rem;
+    float: left;
+    }
+    
+  h2.footer{
+    align-self: center;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    }
+
+  /*mains~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  
+  section.main{
+    background: radial-gradient(circle, rgba(218,165,32,1) 20%, rgba(227,139,8,1) 100%);
+    display: flex;              
+    flex-direction: column;
+    border-width: 0 0 0.4rem 0;
+    border-style: solid;
+    border-image-source: url(/assets/images/usable-images/wood1H.jpg);
+    border-image-slice: 0 0 50% 0;
+    border-image-repeat: stretch;
+  }
+
+  .chalkboard{
+    background: url(/assets/images/usable-images/chalkboard-background.jpg);
+    background-size: 100% 100%;
+  }
+
+  /*our story~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  img.main{
+    width: 12rem;
+    float: right;
+  }
+  /*menu~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+  nav.menu-nav>ul{
+
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+
+    nav.menu-nav>ul>h3{
+    text-align: center;
+    font-size: 1.2rem;
+
+  }
+  nav>ul>h3{
+    border-bottom: 1vw double darkgoldenrod;
+    text-transform: capitalize;
+  }
+  h3.menu-nav-btn{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1vw double #55342bb5;
+    padding-top: 2vw;
+    align-self: center;
+  }
+
+  div.menus{
+    padding-right: 2vw;
+    padding-top: 2vw;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  ul.menu-section{
+    padding-right: 2vw;
+    padding-top: 2vw;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+
+  li.menu-item {
+    padding: 2vw 2vw 2vw 0;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  h3.menu-item-title+img{
+    float: right;
+    padding-right: 2vw;
+    width: 40vw;
+    height: 40vw;
+  }
+  p.menu-item-desc>img{
+    float: right;
+    padding-right: 2vw;
+    width: 40vw;
+    height: 40vw;
+  }
+
+  p.menu-item-desc{
+    display: flex;
+    padding-right: 2vw;
+  }
+
+
 }
 
+@media screen and (max-width: 2000px){
+  *{box-sizing: border-box;}  
+  * { outline: 1px red solid !important; visibility: visible !important }
+  
+  svg{display: none;}
+  img{width: 100px;}
 
 
-.chalkboard{
-  background: url(/assets/images/usable-images/chalkboard-background.jpg);
-  background-size: 100% 100%;
-}
-
-
-
-/*our story~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
+  
 
 
 
@@ -257,95 +327,4 @@ section.main{
 
 
 
-
-
-
-
-/*menu~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
-
-p.menu-item-desc>img{
-  width: 10vw;
-}
-
-nav.menu-nav>ul{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex-flow: 
-}
-.menu-nav-btn{
-flex-direction: ;
-}
-
-div.menus{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-  /*~~~~~~~~~~~~~~~~~~fix flexbox~~~~~~~~~~~~~~~~*/
-
-
-ul.menu-section{
-  flex: 1;
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column;
-  /*testiion*/
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-li.menu-item {
-  border: 4px dashed white;
-  display: flex;
-  /*testing*/
-  width: 30%;
-flex-direction: row;
-flex-wrap: wrap;
-align-items: center;
-}
-
-h3.menu-item-title{
-  display: flex;
-  border: 2px solid green
-}
-p.menu-item-desc{
-  border: 2px solid purple;
-  display: flex;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*story~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-img.main{
-  width: 12rem;
-  float: right;
-}
-
-
-
-
-
-
-
+} 
