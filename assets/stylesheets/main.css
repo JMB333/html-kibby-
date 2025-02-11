@@ -51,9 +51,9 @@ table {
 */
 @media screen and (max-width: 435px){
   *{box-sizing: border-box;}  
-  /* * { outline: 1px red solid !important; visibility: visible !important } */
-
+  /* * { outline: 1px red solid !important; visibility: visible !important } */ 
   svg{display: none;}
+  
 
 
   a {
@@ -66,7 +66,7 @@ table {
     letter-spacing: 0.1rem;
     width: 90vw;
     box-sizing: border-box;
-    background-image: url("/assets/images/usable-images/polish-eagle.jpeg");
+    background-image: url("/assets/images/polish-eagle-edit.jpeg");
     background-size: 1rem;
     background-color: #900000;
     background-position: top;
@@ -74,7 +74,7 @@ table {
     
     border-width: 0.4rem;
     border-style: solid;
-    border-image-source: url(/assets/images/usable-images/wood1.jpg);
+    border-image-source: url(/assets/images/wood1H.jpg);
     border-image-slice: 40% 10%;
     border-image-repeat: stretch;
 
@@ -154,7 +154,7 @@ table {
 
     border-width: 0 0 0.3rem 0;
     border-style: solid;
-    border-image-source: url(/assets/images/usable-images/wood2H.jpg);
+    border-image-source: url(/assets/images/wood2H.jpg);
     border-image-slice: 0 0 50% 0;
     border-image-repeat: stretch;
 
@@ -163,7 +163,7 @@ table {
   li.nav.menu {
     border-width: 0.3rem  0 0.3rem 0;
     border-style: solid;
-    border-image-source: url(/assets/images/usable-images/wood3H.jpg);
+    border-image-source: url(/assets/images/wood3H.jpg);
     border-image-slice: 50% 0 50% 0;
     border-image-repeat: stretch;
   }
@@ -171,7 +171,7 @@ table {
   li.nav.soup {
     border-width: 0 0 0.3rem 0;
     border-style: solid;
-    border-image-source: url(/assets/images/usable-images/wood5H.jpg);
+    border-image-source: url(/assets/images/wood5H.jpg);
     border-image-slice: 0 0 50% 0;
     border-image-repeat: stretch;
   }
@@ -179,7 +179,7 @@ table {
   li.nav.story {
     border-width: 0 0 0.3rem 0;
     border-style: solid;
-    border-image-source: url(/assets/images/usable-images/wood1H.jpg);
+    border-image-source: url(/assets/images/wood1H.jpg);
     border-image-slice: 0 0 50% 0;
     border-image-repeat: stretch;
   }
@@ -197,16 +197,17 @@ table {
   ul.footer{
     font-size: .8rem;
     list-style-type: none;
+    padding-bottom:.2rem
   }
 
   .times{
     padding: 1rem;
-    float: left;
+    /* float: left; */
     }
     
   h2.footer{
     align-self: center;
-    padding-top: 1rem;
+    padding: 1rem 0 0 1rem;
     font-size: 1.3rem;
     }
 
@@ -218,20 +219,20 @@ table {
     flex-direction: column;
     border-width: 0 0 0.4rem 0;
     border-style: solid;
-    border-image-source: url(/assets/images/usable-images/wood1H.jpg);
+    border-image-source: url(/assets/images/wood1H.jpg);
     border-image-slice: 0 0 50% 0;
     border-image-repeat: stretch;
   }
 
   .chalkboard{
-    background: url(/assets/images/usable-images/chalkboard-background.jpg);
+    background: url(/assets/images/chalkboard-background.jpg);
     background-size: 100% 100%;
   }
 
   /*our story~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  img.main{
-    width: 12rem;
+  img.chips{
+    width: 8rem;
     float: right;
   }
   /*menu~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -313,7 +314,6 @@ table {
 @media screen and (max-width: 2000px){
   *{box-sizing: border-box;}  
   * { outline: 1px red solid !important; visibility: visible !important }
-  
   svg{display: none;}
   img{width: 100px;}
 
